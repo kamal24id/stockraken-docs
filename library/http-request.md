@@ -535,3 +535,7 @@ $this->http_req->utility('info'); // return curl_getinfo
 $this->http_req->utility('handle'); // returns internal cURL handle
 ```
 
+## Bugs and Issues
+
+For bugs, errors and issues you can send issues request at [GitHub clickoding](https://github.com/clickoding/http_request/issues).
+
