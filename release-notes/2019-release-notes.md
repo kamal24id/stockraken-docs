@@ -4,6 +4,13 @@ description: Release timeline 2019 here.
 
 # 2019 Release Notes
 
+## March 01, 2019
+
+### Library
+
+*  Bug fixed type code
+* Release new versions
+
 ## February 27, 2019
 
 ### Library
