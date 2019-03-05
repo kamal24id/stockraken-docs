@@ -11,6 +11,11 @@ description: Release timeline 2019 here.
 * Bug Fixed config file and load config file.
 * Change some feature function
 
+### Stockraken API Online
+
+* Make SDK for API Online
+* Bukalapak API for SDK Stockaken Online
+
 ## March 01, 2019
 
 ### Library
