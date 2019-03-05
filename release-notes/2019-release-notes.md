@@ -4,6 +4,13 @@ description: Release timeline 2019 here.
 
 # 2019 Release Notes
 
+## March 05, 2019
+
+### Library HTTP Request
+
+* Bug Fixed config file and load config file.
+* Change some feature function
+
 ## March 01, 2019
 
 ### Library
