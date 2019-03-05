@@ -365,11 +365,13 @@ $this->http_req->set_Body($body, $options = 'default');
 
 
   ```php
+  $mime_jpg = 'image/jpeg';
+  $mime_png = 'image/png';
   $body = array(
       'foo'   => 'bar',
       'queen' => 'king',
-      'images'=> $this->http_req->get_File('/path/to/images/img.jpg', 'text/plain'),
-      'logo'  => $this->http_req->get_File('/path/to/logo.png', 'text/plain'),
+      'images'=> $this->http_req->get_File('/path/to/images/img.jpg', $mime_jpg),
+      'logo'  => $this->http_req->get_File('/path/to/logo.png', $mime_png),
   );
 
   $this->http_req->set_Body($body);
@@ -443,6 +445,24 @@ $this->http_req->set_Auth($username, $password, $curlmethod);
 {% hint style="warning" %}
 BEARER not support, because it won't support in the future PHP. You can use `set_Headers` for BEARER Token.
 {% endhint %}
+
+### Get File
+
+Get file function is get file from path to upload with cURL file upload, here the code :
+
+```php
+$path  = 'path/real_path/txt/abc.txt';
+$mime  = 'text/plain';
+
+$image = $this->http_req->get_File($path, $mime);
+```
+
+This function is helpfully for upload file.
+
+#### Information
+
+* `$path`, Real path to the file.
+* `$mime`, Mime types the files. See more [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 ### Cookies
 
