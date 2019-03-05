@@ -16,6 +16,11 @@ description: Release timeline 2019 here.
 * Make SDK for API Online
 * Bukalapak API for SDK Stockaken Online
 
+### Stockraken API Offline
+
+* Make Database for API offline
+* Make list of function
+
 ## March 01, 2019
 
 ### Library
