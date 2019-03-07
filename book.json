@@ -1,0 +1,21 @@
+{
+    "plugins": [
+    	"page-ref", 
+    	"hints", 
+    	"theme-gestalt", 
+    	"-theme-default", 
+    	"styles-sass-fix"
+    ],
+    "pluginsConfig": {
+		"theme-gestalt": {
+		    "logo": "/assets/images/logo_stockraken.png",
+		    "favicon": "/assets/images/logo.png",
+		    "baseUrl": null,
+		    "excludeDefaultStyles": true,
+		    "doNotHideChildrenChapters" : false
+		}
+	},
+    "styles": {
+        "website": "./assets/styles/website.scss"
+    }
+}
