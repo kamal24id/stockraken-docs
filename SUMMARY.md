@@ -5,6 +5,11 @@
   * [2019 Release Notes](release-notes/2019-release-notes.md)
 * [Quick Start](quick-start.md)
 
+## API Request
+
+* [Overview](api-request/overview.md)
+* [Users & Roles](api-request/users-and-roles.md)
+
 ## Library
 
 * [StocKraken HTTP Request](library/http-request.md)
