@@ -36,11 +36,13 @@ Cake successfully retrieved.
 {% code-tabs-item title="JSON" %}
 ```javascript
 {
-    "status" : "ok",
-    "message" : "Berhasil masuk",
-    "data" : {
-        
-    }
+	"status":true,
+	"message":"Berhasil Login",
+	"data" : {
+		"is_admin":false,
+		"expired_at":"YYYY-MM-DD HH:ii:ss",
+		"access_token":"__YOUR_API_KEY__"
+	}
 }
 ```
 {% endcode-tabs-item %}
@@ -56,7 +58,7 @@ Could not find a cake matching this query.
 {% code-tabs-item title="JSON" %}
 ```javascript
 {
-    "status" : "error",
+    "status" : false,
     "data" : null,
     "message" : "Username atau password salah"
 }
