@@ -2,7 +2,7 @@
 description: Usage for API Users and Roles management
 ---
 
-# Users & Roles
+# Authentication
 
 {% api-method method="post" host="https://st-server.jvm" path="/user/login" %}
 {% api-method-summary %}
