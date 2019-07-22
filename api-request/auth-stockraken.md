@@ -75,5 +75,46 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://st-server.jvm" path="/api/role" %}
+{% api-method-summary %}
 
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get current user roles and premissions
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer \_\_YOUR\_API\_TOKEN\_\_
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Accept" type="string" required=true %}
+application/json
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Sample success get user role
+{% endapi-method-response-example-description %}
+
+```
+{
+	"status":true,
+	"message":"Berhasil ambil data",
+	"data" : {
+		"roles" : [],
+		"permissions" : []
+	}
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
