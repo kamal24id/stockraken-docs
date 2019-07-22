@@ -16,11 +16,15 @@ This endpoint allows you to get free cakes.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="remember\_me" type="boolean" required=false %}
+Remember for update expire date token
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="password" type="string" required=true %}
 Password for you account
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="username" type="string" required=true %}
+{% api-method-parameter name="login" type="string" required=true %}
 Username or email for user to access the application
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
