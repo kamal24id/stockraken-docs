@@ -9,6 +9,7 @@
 
 * [Overview](api-request/overview.md)
 * [Authentication](api-request/auth-stockraken.md)
+* [Users & Roles](api-request/users-and-roles.md)
 
 ## Library
 
