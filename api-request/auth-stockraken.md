@@ -77,11 +77,11 @@ Could not find a cake matching this query.
 
 {% api-method method="get" host="https://st-server.jvm" path="/api/role" %}
 {% api-method-summary %}
-
+Get current user roles & permissions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get current user roles and premissions
+Get current user roles and permissions
 {% endapi-method-description %}
 
 {% api-method-spec %}
