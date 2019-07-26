@@ -77,11 +77,11 @@ Could not find a cake matching this query.
 
 {% api-method method="get" host="https://st-server.jvm" path="/api/role" %}
 {% api-method-summary %}
-
+Current user roles & permissions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get current user roles and premissions
+Get current user roles and permissions
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -103,7 +103,7 @@ application/json
 Sample success get user role
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
 	"status":true,
 	"message":"Berhasil ambil data",
@@ -113,6 +113,60 @@ Sample success get user role
 	}
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://st-server.jvm" path="/api/user" %}
+{% api-method-summary %}
+Current user profile
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get current user profile
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer \_\_Your\_API\_key\_\_
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Accept" type="string" required=false %}
+application/json
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Success response
+{% endapi-method-response-example-description %}
+
+{% code-tabs %}
+{% code-tabs-item title="JSON" %}
+```javascript
+{
+	"status":true,
+	"message":"Berhasil ambil data",
+	"data" : {
+        "id": 2,
+        "name": "username",
+        "email": "email@email.com",
+        "email_verified_at": null,
+        "created_at": "2019-07-16 06:29:55",
+        "updated_at": "2019-07-24 04:00:26",
+        "status": 0,
+        "deleted_at": null,
+        "contact_id": []
+	}
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
