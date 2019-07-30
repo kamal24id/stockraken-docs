@@ -5,7 +5,7 @@ description: >-
   PHP.
 ---
 
-# StocKraken HTTP Request
+# Stockraken HTTP Request \(Delay\)
 
 ## Features
 

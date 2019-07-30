@@ -14,5 +14,6 @@
 
 ## Library
 
-* [StocKraken HTTP Request](library/http-request.md)
+* [Stockraken HTTP Request \(Delay\)](library/http-request.md)
+* [Stockraken Standard Response](library/stockraken-standard-response.md)
 
